@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bachillerato de Investigación para dummies | IES Dr. Pedro Guillén (Curso 2026/2027)</title>
+  <meta name="description" content="Guía informativa del Bachillerato de Investigación - IES Dr. Pedro Guillén (Curso 2026/2027). Formato Vivliostyle con tipografía Jost y paleta Atardecer Coral Neón." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* VIVLIOSTYLE CSS PAGED MEDIA SPECIFICATION */
+    @page {
+      size: A4 portrait;
+      margin: 22mm 18mm 25mm 18mm;
+      background-color: #fff7ed;
+      background-image: 
+        linear-gradient(rgba(249, 115, 22, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249, 115, 22, 0.045) 1px, transparent 1px);
+      background-size: 24px 24px;
+
+      @top-left {
+        content: "IES Dr. Pedro Guillén  //  Curso 2026/2027";
+        font-family: 'Space Grotesk', system-ui, sans-serif;
+        font-size: 7.5pt;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #c2410c;
+        border-bottom: 1px solid rgba(249, 115, 22, 0.28);
+        padding-bottom: 4px;
+      }
+
+      @top-right {
+        content: "Bachillerato de Investigación para dummies";
+        font-family: 'Space Grotesk', system-ui, sans-serif;
+        font-size: 7.5pt;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        color: #9a3412;
+        border-bottom: 1px solid rgba(249, 115, 22, 0.28);
+        padding-bottom: 4px;
+      }
+
+      @bottom-center {
+        content: "— " counter(page) " —";
+        font-family: 'Space Grotesk', monospace, sans-serif;
+        font-size: 8.5pt;
+        font-weight: 600;
+        color: #ea580c;
+        letter-spacing: 0.1em;
+      }
+
+      @bottom-right {
+        content: "Vivliostyle • IES Dr. Pedro Guillén";
+        font-family: 'Outfit', sans-serif;
+        font-size: 6.5pt;
+        color: #c2410c;
+        opacity: 0.7;
+      }
+    }
+
+    @page :first {
+      @top-left { content: none; }
+      @top-right { content: none; }
+      margin-top: 18mm;
+    }
+
+    .avoid-break {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    :root {
+      --bg-synth: #fff7ed;
+      --bg-card: rgba(255, 255, 255, 0.84);
+      --text-main: #291807;
+      --text-lead: #431407;
+      --accent-primary: #ea580c;
+      --accent-secondary: #9a3412;
+      --border-accent: rgba(249, 115, 22, 0.28);
+      --header-color: #c2410c;
+      --timeline-bg: rgba(255, 247, 237, 0.85);
+      --pill-bg: rgba(254, 215, 170, 0.75);
+      --pill-text: #9a3412;
+      --font-display: 'Space Grotesk', system-ui, sans-serif;
+      --font-body: 'Jost', system-ui, -apple-system, sans-serif;
+      --font-title: 'Outfit', system-ui, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-synth);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      font-size: 10.5pt;
+      line-height: 1.55;
+      background-image: 
+        radial-gradient(ellipse 70% 40% at 50% -10%, rgba(249, 115, 22, 0.28), transparent 70%),
+        linear-gradient(rgba(249, 115, 22, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249, 115, 22, 0.045) 1px, transparent 1px);
+      background-size: 100% 100%, 28px 28px, 28px 28px;
+      min-height: 100vh;
+    }
+
+    .document-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem 4rem 2rem;
+    }
+
+    .doc-header {
+      text-align: center;
+      margin-bottom: 2.2rem;
+      padding-bottom: 1.6rem;
+      border-bottom: 2px solid var(--border-accent);
+      position: relative;
+    }
+
+    .doc-header::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 35%;
+      right: 35%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary), #0284c7);
+      border-radius: 2px;
+    }
+
+    .doc-title {
+      font-family: var(--font-title);
+      font-size: 2.3rem;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.6rem;
+      color: var(--text-lead);
+    }
+
+    .doc-subtitle {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--header-color);
+    }
+
+    .columns-container {
+      columns: 2;
+      -webkit-columns: 2;
+      -moz-columns: 2;
+      column-count: 2;
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-gap: 2.2rem;
+      -webkit-column-gap: 2.2rem;
+      column-rule: 1px dashed var(--border-accent);
+      -webkit-column-rule: 1px dashed var(--border-accent);
+      text-align: justify;
+    }
+
+    .section-title {
+      font-family: var(--font-title);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--accent-secondary);
+      margin-top: 1.25rem;
+      margin-bottom: 0.65rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      break-after: avoid;
+    }
+
+    .section-title::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent-primary);
+      border-radius: 2px;
+      transform: rotate(45deg);
+    }
+
+    .section-block { margin-bottom: 1.5rem; }
+    p { margin-bottom: 0.85rem; hyphens: auto; }
+    p.lead { font-size: 11pt; font-weight: 500; color: var(--text-lead); }
+    ul, ol { margin-left: 1.25rem; margin-bottom: 1rem; }
+    li { margin-bottom: 0.5rem; line-height: 1.48; }
+    li::marker { color: var(--accent-primary); font-weight: 600; }
+    .nested-list { margin-top: 0.4rem; margin-left: 1.2rem; }
+    .roman-list { list-style-type: lower-roman; }
+    .alpha-list { list-style-type: lower-alpha; }
+    .item-label { font-weight: 700; color: var(--accent-secondary); }
+
+    .synth-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-accent);
+      border-left: 4px solid var(--accent-primary);
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      margin: 1rem 0;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+      break-inside: avoid;
+    }
+
+    .synth-card-title {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--header-color);
+      margin-bottom: 0.4rem;
+    }
+
+    .project-steps {
+      list-style: none;
+      margin-left: 0;
+      counter-reset: step-counter;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 0.45rem;
+      margin: 0.8rem 0;
+    }
+
+    .project-steps li {
+      counter-increment: step-counter;
+      background: var(--timeline-bg);
+      border: 1px solid var(--border-accent);
+      border-radius: 6px;
+      padding: 0.4rem 0.65rem;
+      font-size: 9.5pt;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 0;
+    }
+
+    .project-steps li::before {
+      content: counter(step-counter);
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 700;
+      background: var(--pill-bg);
+      color: var(--pill-text);
+      width: 18px;
+      height: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 1.4rem;
+      margin-bottom: 0.65rem;
+      line-height: 1.45;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.45rem;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent-primary);
+      box-shadow: 0 0 6px var(--accent-primary);
+    }
+
+    .timeline-time {
+      font-weight: 700;
+      color: var(--accent-secondary);
+      font-family: var(--font-display);
+      font-size: 9.5pt;
+    }
+
+    .crit-pills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0; }
+    .crit-pill {
+      font-size: 8.5pt; font-weight: 600; color: var(--pill-text);
+      background: var(--pill-bg);
+      border: 1px solid var(--border-accent);
+      padding: 0.25rem 0.6rem; border-radius: 9999px;
+    }
+
+    .signoff {
+      margin-top: 1.8rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-accent);
+      text-align: right;
+      font-family: var(--font-display);
+      font-weight: 700;
+      color: var(--header-color);
+      font-size: 1.05rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      .columns-container {
+        columns: 1 !important;
+        -webkit-columns: 1 !important;
+        -moz-columns: 1 !important;
+        column-count: 1 !important;
+        -webkit-column-count: 1 !important;
+        -moz-column-count: 1 !important;
+        column-rule: none !important;
+        -webkit-column-rule: none !important;
+      }
+      .document-wrapper { padding: 1.2rem 1rem 3.5rem 1rem; }
+      .doc-title { font-size: 1.75rem; }
+      .project-steps { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      body {
+        background-color: #fff7ed !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .document-wrapper {
+        max-width: 100% !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .columns-container {
+        display: block !important;
+        columns: 2 !important;
+        -webkit-columns: 2 !important;
+        -moz-columns: 2 !important;
+        column-count: 2 !important;
+        -webkit-column-count: 2 !important;
+        -moz-column-count: 2 !important;
+        column-gap: 12mm !important;
+        -webkit-column-gap: 12mm !important;
+        column-rule: 1px dashed rgba(249, 115, 22, 0.28) !important;
+        -webkit-column-rule: 1px dashed rgba(249, 115, 22, 0.28) !important;
+        text-align: justify !important;
+        width: 100% !important;
+      }
+      .section-block,
+      .synth-card,
+      .avoid-break {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        -webkit-column-break-inside: avoid !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="document-wrapper">
+    <header class="doc-header">
+      <h1 class="doc-title">Bachillerato de Investigación para dummies</h1>
+      <p class="doc-subtitle">IES Dr. Pedro Guillén \\ Curso 2026/2027</p>
+    </header>
+
+    <div class="columns-container">
+      <section class="section-block avoid-break">
+        <h2 class="section-title">¿Qué?</h2>
+        <p class="lead">El <strong>Bachillerato de Investigación</strong> es una modalidad de Bachillerato dirigida a alumnos motivados e interesados en profundizar en algún aspecto de cualquier campo del conocimiento (científico, humanístico, técnico o artístico).</p>
+        <p>Esta modalidad añade al Bachillerato ordinario (1) cursar una asignatura de <em>Metodología de la Investigación</em> en los dos cursos y (2) realizar y defender un <em>proyecto de investigación original</em> a lo largo de Bachillerato.</p>
+      </section>
+
+      <section class="section-block avoid-break">
+        <h2 class="section-title">¿Quién?</h2>
+        <p>Los protagonistas indiscutibles de este Bachillerato son los <strong>alumnos</strong>. Sin embargo, éstos se ven arropados y guiados por nosotros:</p>
+        <ul>
+          <li><span class="item-label">Tutoras de alumnos de Bachillerato de Investigación:</span> Carmen García (1º Bach) y Jose Celdrán (2º Bach).</li>
+          <li><span class="item-label">Tutores de los proyectos:</span> tanto la participación en certámenes (Prometeo…) como la realización del proyecto final tendrán a un tutor encargado de orientar a los alumnos en cada tema. Estos tutores se asignarán <em>ex profeso</em>.</li>
+          <li><span class="item-label">Profesores de Metodología de la Investigación:</span> Fermín Gallego y Ana Cascales.</li>
+          <li><span class="item-label">Jefatura de estudios:</span> Belén Molina y Enrique Lucerga.</li>
+          <li><span class="item-label">Coordinadores del Bachillerato de Investigación:</span> Fina Nicolás y Paco Aranda.</li>
+        </ul>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-title">¿Cómo?</h2>
+        <p>La idea de esta modalidad es que los alumnos se acostumbren a la labor de investigación típica de la enseñanza superior. Por ello, van recabando datos, leyendo fuentes, redactando y revisando su trabajo. En caso de colaborar con algún centro de investigación, también tendrán que comunicarse con su tutor colaborador y, eventualmente, visitarlo.</p>
+        <p>El modo en que se realiza la investigación varía según los proyectos en que estén inscritos los alumnos. Por simplificar:</p>
+        <ol class="alpha-list">
+          <li class="avoid-break"><strong>Todos tendrán que defender un proyecto específico del Bachillerato de Investigación.</strong> Este proyecto se realizará a lo largo de todo el Bachillerato y de forma individual.</li>
+          <li>
+            <strong>Algunos (o, al menos, no necesariamente todos) participarán en otros programas con características propias (ordenados cronológicamente por sus fechas de celebración a lo largo del curso):</strong>
+            <ol class="roman-list nested-list">
+              <li class="avoid-break"><strong>Premio Don Bosco a la Investigación e Innovación Tecnológica (Zaragoza):</strong> certamen nacional con fase presencial y entrega de premios hacia mediados de marzo (inscripciones en otoño con cierre en noviembre). Es el certamen más temprano del curso en celebrarse.</li>
+              <li class="avoid-break"><strong>Congreso Regional de Investigadores Júnior de la UMU:</strong> celebración anual en abril (en torno a Semana Santa en el Campus de Espinardo; presentación de pósteres o defensa oral).</li>
+              <li class="avoid-break"><strong>Urania (Congreso Navarro de Jóvenes Investigadores, UNED Tudela):</strong> congreso presencial con celebración anual hacia mediados de junio (inscripciones entre noviembre y diciembre).</li>
+              <li class="avoid-break"><strong>Programa Prometeo (Región de Murcia):</strong> enfocado a realizar proyectos en grupo durante el curso con alumnos de Investigación de 1º Bachillerato, en colaboración con investigadores de instituciones regionales (UMU y UPCT), con congreso final y presentación en junio.</li>
+              <li class="avoid-break"><strong>Certamen Nacional de Jóvenes Investigadores del INJUVE:</strong> convocatoria en primavera y congreso presencial habitualmente hacia finales de junio (con 39 premios en metálico).</li>
+            </ol>
+          </li>
+        </ol>
+
+        <p class="avoid-break">Los certámenes opcionales tienen sus propias características sobre las que se informará en los casos relevantes (según la idoneidad de los proyectos, los plazos…). De todas formas, como se ha dicho, todos los alumnos del Bachillerato de Investigación tendrán que realizar, escribir y defender un proyecto original. A modo de orientación, la estructura final del proyecto será ésta:</p>
+
+        <div class="synth-card avoid-break">
+          <div class="synth-card-title">Estructura Final del Proyecto</div>
+          <ol class="project-steps">
+            <li>Introducción</li>
+            <li>Objetivos y justificación</li>
+            <li>Marco teórico</li>
+            <li>Metodología</li>
+            <li>Resultados</li>
+            <li>Análisis</li>
+            <li>Conclusiones</li>
+            <li>Bibliografía</li>
+            <li>Anexos</li>
+          </ol>
+        </div>
+
+        <p class="avoid-break">Los alumnos siguen un manual de estilo para los aspectos formales que se les enseña en Metodología y de cuyo cumplimiento se encargan los profesores de la asignatura, pero podéis preguntar si tenéis curiosidad por conocerlo con más detalle. El cometido de los tutores de investigación tiene más que ver con la calidad y el rigor del contenido y de la metodología.</p>
+
+        <div class="synth-card avoid-break">
+          <div class="synth-card-title">Defensa Pública y Tribunal</div>
+          <p style="font-size: 9.8pt; margin-bottom: 0.4rem;">El documento final se defenderá ante un tribunal en un acto público vespertino (normalmente, en la <strong>Casa de la Cultura de Archena</strong>). El tribunal estará compuesto por profesores del centro (un tribunal distinto por proyecto, pudiendo repetirse algunos miembros). En unos <strong>15 minutos</strong>, cada alumno tendrá que defender su proyecto, y el tribunal valorará la exposición siguiendo distintos ítems en torno a:</p>
+          <div class="crit-pills">
+            <span class="crit-pill">&bull; Presentación</span>
+            <span class="crit-pill">&bull; Estructura y organización</span>
+            <span class="crit-pill">&bull; Claridad en la exposición</span>
+            <span class="crit-pill">&bull; Materiales de apoyo</span>
+            <span class="crit-pill">&bull; Adecuación al tiempo</span>
+          </div>
+          <p style="margin-top: 0.5rem; margin-bottom: 0; font-size: 9.5pt; color: var(--accent-secondary); font-weight: 600;">La calificación final del proyecto será el resultado de la suma ponderada de las notas (1) del tutor del proyecto, (2) del profesor de Metodología de la Investigación y (3) del tribunal de la exposición.</p>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <h2 class="section-title">¿Cuándo?</h2>
+        <p>Simplifiquemos. Vamos a quedarnos sólo con el grueso del proyecto de investigación del Bachillerato, dejando de lado el resto de programas. Nos encontramos el siguiente desarrollo a lo largo del curso académico:</p>
+
+        <div class="avoid-break" style="margin: 0.8rem 0;">
+          <div class="timeline-item"><span class="timeline-time">1. Primer trimestre:</span> continuación del proyecto en 2º Bachillerato, comenzado ya el curso anterior.</div>
+          <div class="timeline-item"><span class="timeline-time">2. Diciembre:</span> encuesta a alumnos de 1º Bachillerato sobre sus intereses en temas de investigación, orientados por las líneas propuestas por los departamentos.</div>
+          <div class="timeline-item"><span class="timeline-time">3. Antes de Navidades:</span> borrador definitivo del proyecto de 2º Bachillerato.</div>
+          <div class="timeline-item"><span class="timeline-time">4. Enero y comienzos de febrero:</span> finalización del documento definitivo, preparación de la presentación y ensayos de la defensa pública.</div>
+          <div class="timeline-item"><span class="timeline-time">5. Mediados de febrero:</span> <strong>defensa pública de los proyectos</strong>.</div>
+          <div class="timeline-item"><span class="timeline-time">6. Marzo:</span> adjudicación de temas de investigación en 1º Bachillerato.</div>
+          <div class="timeline-item"><span class="timeline-time">7. Tercer trimestre:</span> investigación y escritura de los primeros borradores en 1º Bachillerato.</div>
+        </div>
+
+        <p class="avoid-break">Usando esta estructura, otra forma de ver la secuencia (quizá más natural) es seguir el flujo temporal de los cursos del Bachillerato de Investigación, esto es, empezar con cuándo empieza todo en 1º y cuándo termina en 2º. Visto así, el orden sería <strong>(2), (6) y (7)</strong> en este curso, y <strong>(1), (3), (4) y (5)</strong> durante el siguiente.</p>
+
+        <div class="synth-card avoid-break">
+          <div class="synth-card-title">Plazos Aproximados de Certámenes</div>
+          <ul style="margin-bottom: 0; margin-left: 1.1rem; font-size: 9.5pt;">
+            <li><strong>Premio Don Bosco:</strong> convocatoria en noviembre; fase final hacia mediados de marzo.</li>
+            <li><strong>Congreso Regional de Investigadores Júnior (UMU):</strong> inscripción en marzo/abril; celebración anual en abril.</li>
+            <li><strong>Urania:</strong> convocatoria entre noviembre y diciembre; congreso hacia mediados de junio.</li>
+            <li><strong>Prometeo:</strong> trabajo durante el curso y congreso final en junio.</li>
+            <li><strong>INJUVE:</strong> convocatoria en primavera y congreso presencial habitualmente hacia finales de junio.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-block avoid-break">
+        <h2 class="section-title">¿Para qué?</h2>
+        <p>Esto es mucho trabajo, maestro. <em>¿Renta?</em> Como <strong>profesor</strong>, por supuesto: hacer cosas que ya sabes, aprender cosas que uno no sabía que no sabía, acompañar a jovenzuelos ávidos de saber y una horica de reducción de jornada que no se la salta un galgo.</p>
+        <p>Pero al que quiere, no se le ruega. ¿Qué pasa con los <strong>alumnos</strong>, que a lo mejor no quieren tanto? ¿Qué se llevan?</p>
+        <ul>
+          <li>Obviamente, <strong>aprender muchas cosas</strong> que desconocían.</li>
+          <li><strong>Dar sus primeros pasos</strong> en el mundo de la investigación, facilitando sus estudios posteriores, tanto en asignaturas de grado como, obviamente, en posgrado.</li>
+          <li>Yendo al maldito parné, <strong>premios</strong> tanto en simulado (gratificación en la nota) como en diferido (en los certámenes de investigación se gana <em>dinerito</em> si se resulta premiado).</li>
+        </ul>
+        <p>Es importante que los alumnos sean conscientes de los beneficios de este Bachillerato, por lo que os agradecemos que los difundáis cada vez que tengáis oportunidad, especialmente, en cursos cruciales como 4º ESO.</p>
+        <p>Por supuesto, nos tenéis a vuestra disposición para cualquier cosa en que creáis que os podemos ayudar.</p>
+        <div class="signoff">El equipo de coordinación</div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
